@@ -5,19 +5,22 @@ const router = express.Router();
 // ************ Controller Require ************
 const { create, store, edit, update, destroy} = require ("../controllers/admin")
 
+
+
+// desde app.js viene con /admin
 /*** CREATE ONE PRODUCT ***/ 
-router.get('/???/', create);
-router.post('/',store); 
+router.get('/crear-producto', create);
+router.post('/crear-ptoducto',store); 
 
 
 
 /*** EDIT ONE PRODUCT ***/ 
-router.get('/:id/???',edit); 
-router.put('/:id', update);
+router.get('/editar-producto/:id',edit); 
+router.put('/editar-producto/:id', update);
 
 
 /*** DELETE ONE PRODUCT***/ 
-router.delete('/:id',destroy); 
+router.delete('/eliminar-producto/:id',destroy); 
 
 
 module.exports = router;

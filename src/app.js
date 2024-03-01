@@ -30,7 +30,7 @@ const productsRouter = require('./routes/products.routes'); // Rutas /products
 const adminRouter = require('./routes/admin.routes');
 
 app.use('/', otherRouter);
-app.use('/products', productsRouter);
+app.use('/productos', productsRouter);
 app.use('/admin', adminRouter)
 
 
