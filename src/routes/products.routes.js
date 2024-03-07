@@ -3,13 +3,13 @@ const express = require('express');
 const router = express.Router();
 
 // ************ Controller Require ************
-const productsController = require('../controllers/productsController');
-
+const {list ,detail }= require('../controllers/products');
+// /productos desde app
 /*** GET ALL PRODUCTS ***/ 
-router.???('/', productsController.index); 
+router.get('/', list); 
 
 /*** GET ONE PRODUCT ***/ 
-router.???('/:id/', productsController.detail); 
+router.get('/detalle/:id/',detail); 
 
 
 
