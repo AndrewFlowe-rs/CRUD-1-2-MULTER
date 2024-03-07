@@ -9,7 +9,7 @@ const {list ,detail }= require('../controllers/products');
 router.get('/', list); 
 
 /*** GET ONE PRODUCT ***/ 
-router.get('/detalle/:id/',detail); 
+router.get('/detalle/:id',detail); 
 
 
 

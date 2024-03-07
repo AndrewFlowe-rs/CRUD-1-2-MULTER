@@ -1,4 +1,4 @@
-module.expors = {
+module.exports = {
     create : require('./create.controller'),
     store : require('./store.controller'),
     edit : require('./edit.controller'),

@@ -3,10 +3,9 @@ const express = require('express');
 const router = express.Router();
 
 // ************ Controller Require ************
-const {} = require("../controllers/others");
-const homeController = require('../controllers/others');
-// Desde la app.js viene (/)--> raiz
+const { home, search } = require('../controllers/other');
+
 router.get('/', home); 
-router.get('/search', search); 
+router.get('/buscar', search); 
 
 module.exports = router;

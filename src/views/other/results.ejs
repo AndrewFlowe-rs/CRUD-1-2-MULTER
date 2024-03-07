@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <!-- Include Head -->
-<%- include('partials/head', {title: 'Resultados de tu búsqueda'}) %>
+<%- include('../partials/head', {title: 'Resultados de tu búsqueda'}) %>
 <body>
 	<!-- Header -->
-	<%- include('partials/headerNavbar') %>
+	<%- include('../partials/headerNavbar') %>
 	<!-- /Header -->
 	
 	<!-- Banner -->
@@ -24,9 +24,9 @@
 								<img src="/images/products/¿?" alt="imagen de producto">
 							</figure>
 							<article class="product-box_data">
-								<h2>$FINAL PRICE</h2>
-								<span>DISCOUNT% OFF</span>
-								<p>PRODUCT NAME</p>
+								<h2><%= toThousand(p.price) %></h2>
+								<span><%= p.discount %>% OFF</span>
+								<p><%= p.name %></p>
 								<i class="fas fa-truck"></i>
 							</article>
 						</a>
@@ -41,7 +41,7 @@
 	<!-- /todos los productos -->
 
 	<!-- footer -->
-	<%- include('partials/footer') %>
+	<%- include('../partials/footer') %>
 	<!-- /footer -->
 </body>	
 </html>
