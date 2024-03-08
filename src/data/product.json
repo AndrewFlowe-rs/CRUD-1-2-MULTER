@@ -2,7 +2,7 @@
    {
       "id": 1,
       "name": "Cafetera Moulinex Dolce Gusto Edited",
-      "price": 10008976,
+      "price": 100,
       "discount": 50,
       "category": "visited",
       "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
@@ -131,7 +131,7 @@
       "price": 52000,
       "discount": 80,
       "description": "rthrtshr",
-      "category": "in-sale",
+      "category": "",
       "image": "img-1709925160604.webp"
    },
    {
@@ -142,5 +142,14 @@
       "description": "ya tu sabe",
       "category": "",
       "image": "img-1709925297932.webp"
+   },
+   {
+      "id": 20,
+      "name": "el caballo original de SANMARTIN",
+      "price": 52,
+      "discount": 0,
+      "description": "",
+      "category": "",
+      "image": "default-image.png"
    }
 ]
