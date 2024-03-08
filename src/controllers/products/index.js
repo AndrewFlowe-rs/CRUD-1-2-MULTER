@@ -1,5 +1,6 @@
 module.exports = {
-    list : require ('./list.controller'),
-    detail : require ('./detail.controller')
+    detail : require ('./detail.controller'),
+    list : require ('./list.controller')
+    
     
 }

@@ -1,4 +1,4 @@
- const { loadData } = require( "../../data");
+const { loadData } = require("../../data");
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -7,7 +7,7 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 
 
-module.exports = (req,res) => {
+module.exports = (req, res) => {
    const products = loadData()
-    res.render ("products/list" , {products})
-    } 
+   res.render("products/list", { products })
+} 

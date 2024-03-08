@@ -3,24 +3,26 @@ const express = require('express');
 const router = express.Router();
 
 // ************ Controller Require ************
-const { create, store, edit, update, destroy} = require ("../controllers/admin")
+const { create, store, edit, update, destroy } = require("../controllers/admin");
+const { uploadProducts } = require('../middlewares/uploadFiles');
 
 
 
 // desde app.js viene con /admin
-/*** CREATE ONE PRODUCT ***/ 
+/*** CREATE ONE PRODUCT ***/
 router.get('/crear-producto', create);
-router.post('/crear-ptoducto',store); 
+router.post('/crear-producto', uploadProducts.single('img'), store);
 
 
 
-/*** EDIT ONE PRODUCT ***/ 
-router.get('/editar-producto/:id',edit); 
-router.put('/editar-producto/:id', update);
+
+/*** EDIT ONE PRODUCT ***/
+router.get('/editar-producto/:id', edit);
+router.put('/editar-producto/:id', uploadProducts.single('img'), update);
 
 
-/*** DELETE ONE PRODUCT***/ 
-router.delete('/eliminar-producto/:id',destroy); 
+/*** DELETE ONE PRODUCT***/
+router.delete('/eliminar-producto/:id', destroy);
 
 
 module.exports = router;

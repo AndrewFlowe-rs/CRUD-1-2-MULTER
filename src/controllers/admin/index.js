@@ -3,5 +3,5 @@ module.exports = {
     store : require('./store.controller'),
     edit : require('./edit.controller'),
     update : require('./update.controller'),
-    destroy  : require('./destroyProduct.controller')
+    destroy  : require('./destroy.controller')
 }
